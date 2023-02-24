@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.background {
+    background-color: #222b30;
+    height: 100vh;
+}
+
+.title {
+    background: linear-gradient(to right, aqua, lightcoral);
+    --mask:
+        radial-gradient(55.90px at 50% 75.00px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
+        radial-gradient(55.90px at 50% -50px,#0000 99%,#000 101%) 50% 25px/100px calc(51% - 25px) repeat-x,
+    -webkit-mask: var(--mask);
+        mask: var(--mask);
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+    letter-spacing: 3px;
+    transition: all 3s;
+}
+
+
+.display {
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 2px solid gray;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: aqua;
+}
+
+.playerO {
+    color: lightcoral;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: aqua;
+    color: #222b30;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#reset:hover{
+    box-shadow: 0px 0px 10px 0px aquamarine;
+}
